@@ -3,7 +3,8 @@
 import React from 'react';
 import './Home.css'; // Import the CSS file
 
-const Home = () => {
+const Home = (props) => {
+    console.log("Home",props);
   return (
     <div className="product-card">
       <img
@@ -15,7 +16,10 @@ const Home = () => {
         <h2>Online Mobile</h2>
         <p className="product-price">Price: $499.99</p>
         <div className="button-container">
-          <button className="add-to-cart-button">Add to Cart</button>
+          <button className="add-to-cart-button" 
+          onClick={()=>props.addToCartHandler({price:1000,name:'iphone 11'})}>
+          
+          Add to Cart</button>
           <button className="buy-button">Buy</button>
         </div>
       </div>

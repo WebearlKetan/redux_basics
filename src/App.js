@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div>
       <User data={{name:'ketan prajapati',age:22}}/>
-      <HomeContainer/>
+       <HomeContainer/>
     </div>
   )
 }
